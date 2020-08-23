@@ -1,0 +1,58 @@
+
+.togller{
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-right: 80px;
+}
+body{
+    overflow: hidden;
+}
+.navright{
+    display: none;
+}
+.navleft{
+    grid-column: 1/4;
+}
+.navbar ul{
+flex-direction: column;
+}
+.heading{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 150px;
+}
+.navbar ul{
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    height: 100vh;
+    width: 200px;
+    transform: translateX(220px);
+
+}
+.navbar ul li a{
+    color: white;
+    font-size: 1.7rem;
+    border-bottom: 4px solid white;
+}
+
+.navbar ul::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+    
+}
